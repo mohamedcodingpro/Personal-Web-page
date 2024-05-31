@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-webpage-grid</title>
+    <link rel="stylesheet" href="simple-grid.css">
+    <style>
+        body {
+            background-color: #e4d6a798;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: burlywood;
+            background-color: #9c5d32;
+             border-radius: 2em;
+            
+        }
+
+        .col-5 img {
+    border-radius: 30%;
+}
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            text-align: center
+            padding: 5px;
+            border-collapse: collapse;
+        }
+      @media (min-width: 960px){
+        .rob{
+            display: flex;
+            justify-content: space-between;
+        }
+        .rob .col-4 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .rob .img-3,
+            .rob .img-4,
+            .rob .img-5 {
+                order: 1;
+            }
+
+            .rob .text-3,
+            .rob .text-4,
+            .rob .text-5 {
+                order: 2;
+                margin-left: 20px;
+            }
+        }
+        @media (max-width: 500px) {
+    .rob .col-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rob .img-3,
+    .rob .img-4,
+    .rob .img-5 {
+        order: 1;
+    }
+
+    .rob .text-3,
+    .rob .text-4,
+    .rob .text-5 {
+        order: 2;
+        margin-left: 30px; /* This value can be adjusted based on your design preferences */
+    }
+}
+
+@media (max-width: 600px){
+.img-4 {
+        float: right;
+        margin-left: 25em;
+    }
+
+    .text-4 {
+        float: right;
+        margin-right: 0.5em;
+    }
+}
+      
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1> Get to Know Me</h1>
+
+        <div class="row">
+            <div class="col-5">
+                <h2>Mohamed Abdirahman</h2>
+            </div>
+
+            <div class="col-5">
+                <img src="./Images/Profile pic.jpg" width="180" alt="">
+            </div>
+        </div>
+   <div class="row">
+        <h2> Machu Picchu </h2>
+     
+            <div col-4>
+                <img src="./Images/Machu_Picchu,_Peru.jpg" width="250" alt="">
+            </div>
+            
+            <div class="col-8">
+                I would like to visit Machu Picchu for its breathtaking scenery, mysterious history, and ancient architectural wonders.<br>
+             It offers a unique opportunity to explore the fascinating remnants of an ancient civilization while surrounded by stunning natural landscapes.<br>
+              Additionally, the sense of mystery surrounding its purpose and construction adds to its allure, making it a truly unforgettable destination for adventurers and history enthusiasts alike. <br>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2> Foreign language</h2>
+            <div class="col-10 text-1 ">
+                French is one of the foreign language I would like to learn.
+                Learning French in Africa offers numerous advantages due to its wide usage across the continent, particularly in government, trade, and tourism sectors. 
+                Proficiency in French opens doors to job opportunities and facilitates communication within Africa and internationally.
+                 Additionally, it provides access to French-speaking cultures, literature, and media, enriching cultural understanding and global perspective.
+            </div>
+        </div>
+
+        <table class="row">
+            <tr>
+                <th>English</th>
+                <th>French</th>
+            </tr>
+
+            <tr>
+                <td>The only way to do great work is to love what you do.</td>
+                <td>La seule façon de faire un travail formidable est d'aimer ce que vous faites.</td>
+            </tr>
+    
+            <tr>
+                <td>In the middle of difficulty lies opportunity.</td>
+                <td>Au milieu de la difficulté se trouve l'opportunité</td>
+            </tr>
+    
+            <tr>
+                <td>Be the change that you wish to see in the world</td>
+                <td>Soyez le changement que vous souhaitez voir dans le monde</td>
+            </tr>
+    
+            <tr>
+                <td>The future belongs to those who believe in the beauty of their dreams</td>
+                <td>L'avenir appartient à ceux qui croient en la beauté de leurs rêves.</td>
+            </tr>
+    
+
+        </table>
+
+        
+            <h2>Historical Places in Africa</h2>
+            <div class="rob">
+
+            <div class="col-4">
+                <h3>Telouet Kasbah, Morocco</h3>
+                <div class="img-3">
+                    <img src="./Images/Telouet-Kasbah.jpg" width="180" alt="">
+                </div>
+                <div class="text-3" width="180">
+                    The Kasbah of Telouet, near Marrakech, was once the residence of T’hami el Glaoui, the governor of Marrakech. <br>
+                    It offers beautifully decorated rooms in Andalusian style, overlooking the Imarene River. <br>
+                     Despite being incomplete and deteriorating in parts, guided tours for $2 provide insights into its history. <br>
+                     Booking through travel agents is recommended.
+                </div>
+            </div>
+
+            <div class="col-4">
+                <h3>Isimila Stone Age site, Tanzania</h3>
+                <div class="img-4">
+                    <img src="./Images/Isimila-Stone-Age-site.jpg" width="180" alt="">
+                </div>
+                <div class="text-4" width="200">
+                    The Isimila Stone Age Site near Iringa holds archaeological treasures from early hominoids, including tools and bones. <br>
+                    Guided tours, lasting about 3 hours, offer insights into early human and animal civilizations and feature beautiful granite rock reliefs. <br>
+                    Tours, arranged through travel agencies, start early to beat the heat. <br>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <h3>Robben Island, South Africa</h3>
+                <div class="img-5">
+                    <img src="./Images/Robben-Island.jpg" width="180" alt="">
+                </div>
+                <div class="text-5" width="200">
+                    Robben Island, located in Table Bay, Cape Town, served as a place of imprisonment for centuries, notably housing Nelson Mandela during apartheid.<br>
+                 Initially a habitat for wildlife, it was explored by Bartholomew Diaz in 1488. 
+                 The Dutch later used it as a prison, leading to its UNESCO World Heritage Site designation.
+                  Tours depart from V&A Waterfront daily at 9am, 11am, and 1pm, lasting 3 hours and costing $12 to $21 per person.
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
